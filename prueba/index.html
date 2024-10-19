@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presidencia Municipal de Zuazua</title>
+    <link rel="icon" href="imagenes/Logo zuazua.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo admin.png" alt="Logo de Zuazua" />
+        </div>        
+        <nav>
+            <ul>
+                <li class="1"><a href="index.html">Inicio</a></li>
+                <li class="1"><a href="servicios.html">Servicios</a></li>
+                <li class="1"><a href="noticias.html">Noticias</a></li>
+                <li class="1"><a href="transparencia.html">Transparencia</a></li>
+                <li class="1"><a href="cabildo.html">Cabildo</a></li>
+                <li class="1"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Bienvenidos a Zuazua</h1>
+        <p>Un lugar con historia y tradición.</p>
+    </div>
+
+    <main>
+        <section id="noticias" class="section">
+            <h2>Noticias</h2>
+            <p>Aquí puedes encontrar las últimas noticias y anuncios del municipio.</p>
+            <ul>
+                <li><strong>Noticia 1:</strong> Descripción breve de la noticia.</li>
+                <li><strong>Noticia 2:</strong> Descripción breve de la noticia.</li>
+                <li><strong>Noticia 3:</strong> Descripción breve de la noticia.</li>
+            </ul>
+        </section>
+        
+        <!-- Nueva sección con tres divs en columna -->
+    <section id="acciones" class="acciones-section">
+        <div class="accion">
+            <h3>PREDIAL</h3>
+            <span>Paga tu predial fácil y rápido</span>
+        </div>
+        <div class="accion">
+            <h3>MULTAS</h3>
+            <span>Paga tus multas desde la comodidad de tu casa</span>
+        </div>
+        <div class="accion">
+            <h3>REPORTA</h3>
+            <span>Levanta tu reporte en línea y ayuda a la comunidad</span>
+        </div>
+    </section>
+
+
+    <section id="servicios" class="section">
+        <h2>Servicios Municipales</h2>
+        <form id="servicioForm" class="servicio-form">
+            <label for="servicioSelect">Selecciona un servicio:</label>
+            <select id="servicioSelect" class="servicio-select">
+                <option value="">--Selecciona un servicio--</option>
+                <option value="licencias">Licencias y Permisos</option>
+                <option value="tramites">Trámites de Nacimiento</option>
+                <option value="consulta">Consulta de Servicios</option>
+                <option value="eventos">Eventos Culturales</option>
+            </select>
+            <button type="submit" class="servicio-button">Ver Información</button>
+        </form>
+        <div id="servicioInfo" class="servicio-info"></div> <!-- Div para mostrar información del servicio -->
+    </section>
+    
+
+        <!-- Nueva sección del mapa -->
+        <section id="ubicacion" class="section">
+            <h2>Ubicación</h2>
+            <p>Aquí puedes encontrar la ubicación de la Presidencia Municipal de Zuazua:</p>
+            <div class="map-container">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.1653269840576!2d-100.11078472459505!3d25.896935077267155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662f03ed6eae481%3A0xc7c5783c9c39e66!2sPresidencia%20Municipal%20de%20General%20Zuazua!5e0!3m2!1ses-419!2smx!4v1729289806452!5m2!1ses-419!2smx"
+                width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+    <footer>
+        <div class="footer-bg">
+            <h5>CONTACTO</h5>
+            <p class="info">Para más información, puedes contactarnos a través de los siguientes medios:</p>
+            <p class="tel"><strong>Teléfono:</strong> (123) 456-7890</p>
+            <p class="email"><strong>Email:</strong> info@zuazua.gob.mx</p>
+            <form>
+                <div class="campo-1">
+                    <input class="campo" type="text" placeholder="Nombre">
+                    <input class="campo" type="number" placeholder="Telefono">
+                </div>
+                <div class="campo-1">
+                    <input class="campo" type="email" placeholder="Correo">
+                </div>
+                <textarea class="campo" cols="30" rows="10" placeholder="Texto"></textarea>
+                <input type="submit" value="Enviar" class="btn-1">
+            </form>
+    </footer>
+
+
+<!--         <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <p>Para más información, puedes contactarnos a través de los siguientes medios:</p>
+            <p><strong>Teléfono:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> info@zuazua.gob.mx</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+        
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+        
+                 Select para elegir un servicio 
+                <label for="servicioSelectContacto">Selecciona un servicio:</label>
+                <select id="servicioSelectContacto">
+                    <option value="">--Selecciona un servicio--</option>
+                    <option value="informacion">Información General</option>
+                    <option value="quejas">Quejas y Sugerencias</option>
+                    <option value="asistencia">Asistencia Técnica</option>
+                    <option value="otros">Otros</option>
+                </select>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </section>    -->
+     
+    </main>
+
+    <div class="footer-txt">
+    
+        <div class="social-media">
+            <h4 class="redes">Síguenos en nuestras redes sociales</h4>
+            <a class href="https://www.facebook.com/people/Gobierno-de-Zuazua/61566570546542/" target="_blank"><img src="imagenes/s1.svg" alt="Facebook"></a>
+            <a class href="https://www.instagram.com/elvadeyaniramg/" target="_blank"><img src="imagenes/s3.svg" alt="Instagram"></a>
+        </div>
+        <p>
+            <h6>&copy; 2024 Presidencia Municipal de General Zuazua. Todos los derechos reservados.</h6>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
